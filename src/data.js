@@ -19,13 +19,13 @@ export const CHAMPIONS = [
 ];
 
 export const BELTS = [
-  "Undisputed WWE Champion",
-  "World Heavyweight Champion",
   "WWE Women’s Champion",
-  "Intercontinental Champion",
-  "United States Champion",
-  "NXT Champion",
-  "NXT Women's Champion",
-  "NXT North American Champion",
   "NXT Heritage Cup Champion",
+  "NXT Champion",
+  "NXT North American Champion",
+  "United States Champion",
+  "NXT Women's Champion",
+  "World Heavyweight Champion",
+  "Undisputed WWE Champion",
+  "Intercontinental Champion",
 ];
