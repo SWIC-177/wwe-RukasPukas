@@ -1,5 +1,5 @@
 /**
- * 2. TODO: Filter out the `Tag Team Champions` from the `BELTS` array. Also, remove the corresponding indices from the `CHAMPIONS` array.
+
  * 3. TODO: Alphabetize `CHAMPIONS` by last name.
  * 4. TODO: Create a new ARRAY of objects called `CHAMPIONSHIPS` that contains the following properties:
  *   - `title` - The name of the title.
@@ -7,17 +7,17 @@
  */
 
 export const CHAMPIONS = [
-  "Cody Rhodes",
-  "Damian Priest",
   "Bayley",
-  "Sami Zayn",
+  "Charlie Dempsey",
+  "Ilja Dragunov ",
+  "Oba Femi",
   "Logan Paul",
+  "Roxanne Perez",
+  "Damian Priest",
+  "Cody Rhodes",
   "Awesome Truth",
   "A-Town Down Under",
-  "Ilja Dragunov ",
-  "Roxanne Perez",
-  "Oba Femi",
-  "Charlie Dempsey",
+  "Sami Zayn",
 ];
 
 export const BELTS = [
