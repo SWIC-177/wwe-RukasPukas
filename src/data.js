@@ -1,10 +1,3 @@
-/**
-
- * 4. TODO: Create a new ARRAY of objects called `CHAMPIONSHIPS` that contains the following properties:
- *   - `title` - The name of the title.
- *  - `champion` - The name of the champion.
- */
-
 export const CHAMPIONS = [
   "Bayley",
   "Charlie Dempsey",
