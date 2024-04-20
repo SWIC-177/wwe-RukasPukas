@@ -15,8 +15,6 @@ export const CHAMPIONS = [
   "Roxanne Perez",
   "Damian Priest",
   "Cody Rhodes",
-  "Awesome Truth",
-  "A-Town Down Under",
   "Sami Zayn",
 ];
 
