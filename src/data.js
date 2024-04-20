@@ -1,6 +1,5 @@
 /**
 
- * 3. TODO: Alphabetize `CHAMPIONS` by last name.
  * 4. TODO: Create a new ARRAY of objects called `CHAMPIONSHIPS` that contains the following properties:
  *   - `title` - The name of the title.
  *  - `champion` - The name of the champion.
@@ -29,3 +28,11 @@ export const BELTS = [
   "Undisputed WWE Champion",
   "Intercontinental Champion",
 ];
+
+export const CHAMPIONSHIPS = [];
+
+BELTS.forEach((title, index) => {
+  const champion = CHAMPIONS[index];
+  CHAMPIONSHIPS.push({ title, champion });
+});
+console.log(CHAMPIONSHIPS);
