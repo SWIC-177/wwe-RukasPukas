@@ -1,1 +1,3 @@
-import { CHAMPIONS, BELTS } from "./src/data";
+import { BELTS, CHAMPIONS } from "./src/data";
+
+console.log(BELTS, CHAMPIONS);
