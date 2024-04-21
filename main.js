@@ -5,6 +5,3 @@ const filteredChampions = CHAMPIONS.filter(
 );
 
 const filteredBelts = BELTS.filter((belt) => belt !== "Women's World Champion");
-
-console.log(filteredChampions);
-console.log(filteredBelts);
