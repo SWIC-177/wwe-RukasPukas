@@ -1,6 +1,9 @@
-import { CHAMPIONS } from "./src/data";
+import { CHAMPIONS, BELTS } from "./src/data";
 
-const championVacantTitleRemoval = CHAMPIONS.filter(
+import { removeCorrespondingItemsByTerm } from "./src/lib";
+
+/*const championVacantTitleRemoval = CHAMPIONS.filter(
   (championVacancy) => championVacancy !== "Vacant Title",
 );
 console.log(championVacantTitleRemoval);
+*/
