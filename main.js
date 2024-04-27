@@ -8,13 +8,11 @@ const championVacantTitleRemoval = CHAMPIONS.filter(
 const correspondingTitleRemoval = BELTS.filter(
   (beltVacancy) => beltVacancy !== "Women's World Champion",
 );
-console.log(championVacantTitleRemoval);
-console.log(correspondingTitleRemoval);
 
 const { terms1: filteredBelts, terms2: filteredChampions } =
   removeCorrespondingItemsByTerm({
-    terms1: BELTS,
-    terms2: CHAMPIONS,
+    terms1: correspondingTitleRemoval,
+    terms2: championVacantTitleRemoval,
     filterTerm: "Tag Team Champions",
   });
 const UPDATED_BELTS = filteredBelts;
