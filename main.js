@@ -1,6 +1,10 @@
 import { BELTS, CHAMPIONS } from "./src/data";
 
-import { alphabetizeNames, removeCorrespondingItemsByTerm } from "./src/lib";
+import {
+  alphabetizeNames,
+  printCorrespondingElements,
+  removeCorrespondingItemsByTerm,
+} from "./src/lib";
 
 const championVacantTitleRemoval = CHAMPIONS.filter(
   (championVacancy) => championVacancy !== "Vacant Title",
@@ -23,5 +27,4 @@ const { first: sortedChampions, second: sortedBelts } = alphabetizeNames({
   second: UPDATED_BELTS,
 });
 
-console.log(sortedChampions);
-console.log(sortedBelts);
+printCorrespondingElements(sortedChampions, sortedBelts);
