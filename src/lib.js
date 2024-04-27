@@ -53,3 +53,18 @@ export function alphabetizeNames({ first, second }) {
 
   return { first: sortedFirst, second: sortedSecond };
 }
+
+// EXTRA CREDIT
+/**
+ * @param {string[]} array1
+ * @param {string[]} array2
+ */
+export function printCorrespondingElements(array1, array2) {
+  for (
+    let i = 0;
+    i < array1.length;
+    i++ // I know it wants 3 "+++s" but vite says there is an error when I do so.
+  ) {
+    console.log(`${array1[i]} : ${array2[i]}`);
+  }
+}
