@@ -41,3 +41,7 @@ export function removeCorrespondingItemsByTerm({ terms1, terms2, filterTerm }) {
     { terms1: [], terms2: [] },
   );
 }
+
+export function alphabetizeNames({ first }) {
+  return first.sort();
+}
