@@ -1,6 +1,6 @@
 import { BELTS, CHAMPIONS } from "./src/data";
 
-import { removeCorrespondingItemsByTerm } from "./src/lib";
+import { alphabetizeNames, removeCorrespondingItemsByTerm } from "./src/lib";
 
 const championVacantTitleRemoval = CHAMPIONS.filter(
   (championVacancy) => championVacancy !== "Vacant Title",
@@ -18,4 +18,7 @@ const { terms1: filteredBelts, terms2: filteredChampions } =
 const UPDATED_BELTS = filteredBelts;
 const UPDATED_CHAMPIONS = filteredChampions;
 console.log(UPDATED_BELTS);
-console.log(UPDATED_CHAMPIONS);
+
+const sortedNames = alphabetizeNames({ first: UPDATED_CHAMPIONS });
+
+console.log("sortedNames:", sortedNames);
