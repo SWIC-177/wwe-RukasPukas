@@ -5,7 +5,11 @@ import { removeCorrespondingItemsByTerm } from "./src/lib";
 const championVacantTitleRemoval = CHAMPIONS.filter(
   (championVacancy) => championVacancy !== "Vacant Title",
 );
+const correspondingTitleRemoval = BELTS.filter(
+  (beltVacancy) => beltVacancy !== "Women's World Champion",
+);
 console.log(championVacantTitleRemoval);
+console.log(correspondingTitleRemoval);
 
 const { terms1: filteredBelts, terms2: filteredChampions } =
   removeCorrespondingItemsByTerm({
