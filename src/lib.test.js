@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { removeCorrespondingItemsByTerm } from "./lib";
+import { removeCorrespondingItemsByTerm, alphabetizeNames } from "./lib";
 
 test("removeCorrespondingItemsByTerm", () => {
   // Arrange
@@ -15,7 +15,19 @@ test("removeCorrespondingItemsByTerm", () => {
   // Act
   const result = removeCorrespondingItemsByTerm({ terms1, terms2, filterTerm });
 
-  // Assert - Check if the function correctly removes the corresponding items
+  // Assert
   expect(result.terms1).toEqual(expected.terms1);
   expect(result.terms2).toEqual(expected.terms2);
+});
+
+test("alphabetizeNames function sorts names alphabetically", () => {
+  // Arrange
+  const unsortedNames = ["John", "Alice", "Bob"];
+  const expectedSortedNames = ["Alice", "Bob", "John"];
+
+  // Act
+  const sortedNames = alphabetizeNames({ first: unsortedNames });
+
+  // Assert
+  expect(sortedNames).toEqual(expectedSortedNames);
 });
