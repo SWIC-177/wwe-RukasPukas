@@ -42,6 +42,14 @@ export function removeCorrespondingItemsByTerm({ terms1, terms2, filterTerm }) {
   );
 }
 
-export function alphabetizeNames({ first }) {
-  return first.sort();
+export function alphabetizeNames({ first, second }) {
+  const sortedFirst = [...first].sort();
+  const sortedSecond = [];
+
+  sortedFirst.forEach((champion) => {
+    const index = first.indexOf(champion);
+    sortedSecond.push(second[index]);
+  });
+
+  return { first: sortedFirst, second: sortedSecond };
 }
