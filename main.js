@@ -17,8 +17,7 @@ const { terms1: filteredBelts, terms2: filteredChampions } =
   });
 const UPDATED_BELTS = filteredBelts;
 const UPDATED_CHAMPIONS = filteredChampions;
-console.log(UPDATED_BELTS);
-
 const sortedNames = alphabetizeNames({ first: UPDATED_CHAMPIONS });
 
 console.log("sortedNames:", sortedNames);
+console.log(UPDATED_BELTS);
