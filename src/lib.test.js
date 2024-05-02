@@ -73,4 +73,15 @@ describe("getLastName", () => {
     // Assert
     expect(result).toBe(expected);
   });
+  test("returns the last name from a full name with special characters", () => {
+    // Arrange
+    const fullName = "Starsky & Hutch";
+    const expected = "Hutch";
+
+    // Act
+    const result = getLastName(fullName);
+
+    // Assert
+    expect(result).toBe(expected);
+  });
 });
