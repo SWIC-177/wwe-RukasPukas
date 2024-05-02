@@ -27,10 +27,9 @@ const UPDATED_CHAMPIONS = filteredChampions;
 const championLastNames = UPDATED_CHAMPIONS.map((champion) =>
   getLastName(champion),
 );
-console.log(championLastNames);
 
 const { first: sortedChampions, second: sortedBelts } = alphabetizeNames({
-  first: UPDATED_CHAMPIONS,
+  first: championLastNames,
   second: UPDATED_BELTS,
 });
 
