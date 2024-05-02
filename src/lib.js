@@ -82,3 +82,8 @@ export function merge2ArraysIntoAnArrayOfObjects({ a1, a2, key1, key2 }) {
     ];
   }, []);
 }
+
+export function getLastName(fullName) {
+  const parts = fullName.trim().split(" ");
+  return parts[parts.length - 1];
+}
