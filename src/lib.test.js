@@ -3,6 +3,7 @@ import {
   removeCorrespondingItemsByTerm,
   alphabetizeNames,
   merge2ArraysIntoAnArrayOfObjects,
+  getLastName,
 } from "./lib";
 
 test("removeCorrespondingItemsByTerm", () => {
@@ -35,11 +36,6 @@ test("alphabetizeNames function sorts names alphabetically", () => {
   // Assert
   expect(sortedNames).toEqual(expectedSortedNames);
 });
-
-function getLastName(fullName) {
-  const parts = fullName.trim().split(" ");
-  return parts[parts.length - 1];
-}
 
 describe("getLastName", () => {
   test("returns the last name from a full name", () => {
