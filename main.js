@@ -2,6 +2,7 @@ import { BELTS, CHAMPIONS } from "./src/data";
 
 import {
   alphabetizeNames,
+  getLastName,
   merge2ArraysIntoAnArrayOfObjects,
   printCorrespondingElements,
   removeCorrespondingItemsByTerm,
@@ -22,6 +23,11 @@ const { terms1: filteredBelts, terms2: filteredChampions } =
   });
 const UPDATED_BELTS = filteredBelts;
 const UPDATED_CHAMPIONS = filteredChampions;
+
+const championLastNames = UPDATED_CHAMPIONS.map((champion) =>
+  getLastName(champion),
+);
+console.log(championLastNames);
 
 const { first: sortedChampions, second: sortedBelts } = alphabetizeNames({
   first: UPDATED_CHAMPIONS,
