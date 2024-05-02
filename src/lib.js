@@ -68,3 +68,7 @@ export function printCorrespondingElements(array1, array2) {
     console.log(`${array1[i]} : ${array2[i]}`);
   }
 }
+
+export function merge2ArraysIntoAnArrayOfObjects({ a1, a2, key1, key2 }) {
+  return null;
+}
