@@ -2,6 +2,7 @@ import { BELTS, CHAMPIONS } from "./src/data";
 
 import {
   alphabetizeNames,
+  merge2ArraysIntoAnArrayOfObjects,
   printCorrespondingElements,
   removeCorrespondingItemsByTerm,
 } from "./src/lib";
@@ -28,3 +29,14 @@ const { first: sortedChampions, second: sortedBelts } = alphabetizeNames({
 });
 
 printCorrespondingElements(sortedChampions, sortedBelts);
+
+const key1 = "Belt";
+const key2 = "Champion";
+
+const result = merge2ArraysIntoAnArrayOfObjects({
+  a1: sortedBelts,
+  a2: sortedChampions,
+  key1,
+  key2,
+});
+console.log(result);
