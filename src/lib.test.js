@@ -32,6 +32,11 @@ test("alphabetizeNames function sorts names alphabetically", () => {
   expect(sortedNames).toEqual(expectedSortedNames);
 });
 
+function getLastName(fullName) {
+  const parts = fullName.trim().split(" ");
+  return parts[parts.length - 1];
+}
+
 describe("getLastName", () => {
   test("returns the last name from a full name", () => {
     // Arrange
